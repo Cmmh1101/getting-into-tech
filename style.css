@@ -72,6 +72,12 @@ body {
     top: 0;
     left: 0;
     z-index: 5;
+    position: fixed;
+    background-color: var(--light-gray);
+}
+
+#nav:hover {
+    background-color: white;
 }
 
 #nav .nav-bar {
@@ -103,6 +109,10 @@ ul.nav-menu li a {
     padding: 10px;
     color: var(--dark-grey);
     text-transform: capitalize;
+}
+
+ul.nav-menu li a:hover {
+    font-weight: 700;
 }
 
 #intro {
@@ -318,8 +328,9 @@ button .fas.fa-folder-plus {
     align-items: center;
     flex-flow: wrap;
     width: 800px;
-    margin: 0;
+    margin-bottom: 10px;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .rscContainer.cs {
@@ -465,4 +476,13 @@ textarea {
 form button {
     margin-bottom: 20px;
     width: 100%;
+    border-radius: 30%;
+}
+
+form button a {
+    border-radius: 5px;
+}
+
+form button a .fas {
+    padding-right: 10px;
 }
