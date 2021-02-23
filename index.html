@@ -21,11 +21,12 @@
                 <a href="#hero" id="name">GiT</a>
             </div>
             <ul class="nav-menu">
-                <li><a href="#intro" id="project">home</a></li>
-                <li><a href="#path" id="">path</a></li>
-                <li><a href="#" id="">resources</a></li>
-                <li><a href="#" id="">tips</a></li>
-                <li><a href="#" id="">blog</a></li>
+                <li><a href="#intro" id="home">home</a></li>
+                <li><a href="#path" id="roadmap">path</a></li>
+                <li><a href="#resources" id="myresources">resources</a></li>
+                <li><a href="#tips" id="tip">tips</a></li>
+                <li><a href="#contact" id="contacme">contact</a></li>
+                <!-- <li><a href="#blog" id="">blog</a></li> -->
             </ul>
         </div>
     </section>
@@ -184,8 +185,25 @@
                 </div>
             </div>
         </div>
-
+        <div class="resourceForm">
+            <h4>Let's collaborate. share your favorite tools here!</h4>
+            <form class="toolsForm" name="contact" method="POST" data-netlify="true">
+                <div class="form nameForm">
+                    <label>What's your name? <input type="text" name="name" placeholder="Firs Name, Last Name"/></label>
+                </div>
+                <div class="form emailForm">
+                    <label>Your Email: <input type="email" name="email" placeholder="email@example.com" /></label>
+                </div>
+                <div class="form rscForm">
+                    <label>Share your resources: <textarea name="message" placeholder="websites, podcasts, blogs"></textarea></label>
+                </div>
+                <div class="button">
+                    <button class="btn submitTools" type="submit"> <a class="btnAlone" href="#"><i class="fas fa-paper-plane"></i>Send</a> </button>
+                </div>
+            </form>
+        </div>
     </section>
+
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="app.js"></script>

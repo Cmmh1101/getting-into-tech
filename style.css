@@ -118,6 +118,7 @@ h2 {
     text-align: center;
     line-height: 1.5;
     letter-spacing: 3px;
+    text-transform: capitalize;
 }
 
 .highlightOne {
@@ -388,4 +389,52 @@ button .fas.fa-folder-plus {
     color: var(--dark-grey);
     font-weight: 300;
     text-transform: capitalize;
+}
+
+.resourceForm {
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: left;
+}
+
+.resourceForm h4 {
+    text-align: center;
+    color: var(--light-gray);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.toolsForm {
+    background-color: yellowgreen;
+    padding: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form {
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+label {
+    line-height: 2;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: auto;
+}
+
+form button {
+    margin-bottom: 15px;
+    width: 100%;
 }
