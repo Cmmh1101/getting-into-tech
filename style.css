@@ -456,10 +456,11 @@ textarea {
     height: auto;
 }
 
-.captcha {
+
+/* .captcha {
     width: 100px;
     height: 20px;
-}
+} */
 
 form button {
     margin-bottom: 20px;
