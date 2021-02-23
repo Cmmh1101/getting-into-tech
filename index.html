@@ -186,21 +186,30 @@
             </div>
         </div>
         <div class="resourceForm">
-            <h4>Let's collaborate. share your favorite tools here!</h4>
-            <form class="toolsForm" name="contact" method="POST" data-netlify="true">
-                <div class="form nameForm">
-                    <label>What's your name? <input type="text" name="name" placeholder="Firs Name, Last Name"/></label>
-                </div>
-                <div class="form emailForm">
-                    <label>Your Email: <input type="email" name="email" placeholder="email@example.com" /></label>
-                </div>
-                <div class="form rscForm">
-                    <label>Share your resources: <textarea name="message" placeholder="websites, podcasts, blogs"></textarea></label>
-                </div>
-                <div class="button">
-                    <button class="btn submitTools" type="submit"> <a class="btnAlone" href="#"><i class="fas fa-paper-plane"></i>Send</a> </button>
-                </div>
-            </form>
+            <div class="formContainer">
+                <h4>Let's collaborate. share your favorite tools here!</h4>
+                <div class="layer"></div>
+                <form class="toolsForm" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+                    <div class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </div>
+                    <div class="form nameForm">
+                        <label>What's your name? <input type="text" name="name" placeholder="Firs Name, Last Name"/></label>
+                    </div>
+                    <div class="form emailForm">
+                        <label>Your Email: <input type="email" name="email" placeholder="email@example.com" /></label>
+                    </div>
+                    <div class="form rscForm">
+                        <label>Share your resources: <textarea name="message" placeholder="websites, podcasts, blogs"></textarea></label>
+                    </div>
+                    <div data-netlify-recaptcha="true"></div>
+                    <div class="form button">
+                        <button class="btn submitTools" type="submit"> <a class="btnAlone" href="#"><i class="fas fa-paper-plane"></i>Send</a> </button>
+                    </div>
+                </form>
+
+            </div>
+
         </div>
     </section>
 

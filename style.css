@@ -309,6 +309,7 @@ button .fas.fa-folder-plus {
     justify-content: center;
     align-items: center;
     flex-flow: wrap;
+    margin-bottom: 100px;
 }
 
 .rscContainer {
@@ -396,33 +397,49 @@ button .fas.fa-folder-plus {
     max-width: 500px;
     height: auto;
     margin: 0 auto;
-    padding: 50px 0;
     text-align: left;
+    background: url(/img/share.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.formContainer {
+    background-color: rgba(243, 244, 245, 0.767);
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .resourceForm h4 {
     text-align: center;
-    color: var(--light-gray);
+    color: var(--light-blue);
     text-transform: capitalize;
     font-size: 1.5rem;
-    margin-bottom: 20px;
+    padding: 20px 0;
+    /* padding-top: 20px; */
 }
 
 .toolsForm {
-    background-color: yellowgreen;
     padding: 15px;
     max-width: 300px;
     margin: 0 auto;
 }
 
 .form {
-    margin-bottom: 10px;
     width: 100%;
-    max-width: 300px;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
 }
 
 label {
     line-height: 2;
+    color: var(--dark-grey);
 }
 
 input {
@@ -435,6 +452,6 @@ textarea {
 }
 
 form button {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     width: 100%;
 }
