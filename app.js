@@ -16,6 +16,6 @@ window.addEventListener('scroll', function() {
 ScrollReveal().reveal('#hero');
 ScrollReveal().reveal('#intro', { delay: 500 });
 ScrollReveal().reveal('#path', { delay: 500 });
-// ScrollReveal().reveal('#contactme', { delay: 500 });
+ScrollReveal().reveal('#resources', { delay: 500 });
 
 // ============== END OF SCROLL REVEAL ===================

@@ -142,7 +142,7 @@ h2 {
 
 .info p {
     color: var(--light-gray);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -164,7 +164,7 @@ h2 {
     background-color: var(--light-blue);
     width: 100%;
     height: auto;
-    padding: 120px;
+    padding: 160px;
 }
 
 .containerPath {
@@ -176,7 +176,7 @@ h2 {
 
 .containerPath p {
     color: var(--dark-grey);
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     letter-spacing: 2px;
     margin-bottom: 15px;
@@ -201,6 +201,11 @@ h2 {
     padding: 20px;
     border-radius: 50%;
     margin-bottom: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.process:hover {
+    box-shadow: 0px 0px 13px 0px #000000;
 }
 
 .box1 {
@@ -223,23 +228,24 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: wrap;
     height: 100px;
 }
 
 button {
     color: var(--light-gray);
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
     background-color: transparent;
     outline: none;
     border-radius: 10px;
-    margin: 10px 10px;
+    margin: 1px;
     border: transparent;
 }
 
 button a {
     color: var(--light-gray);
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: capitalize;
     text-decoration: none;
     width: 151.59px;
@@ -272,4 +278,83 @@ button .fas.fa-search-location {
 
 button .fas.fa-folder-plus {
     padding: 0 0 0 10px;
+}
+
+#resources {
+    padding: 160px;
+    width: 100%;
+    height: auto;
+}
+
+.containerResources {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin-bottom: 30px;
+}
+
+.containerResources p {
+    color: var(--light-gray);
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.rscContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    width: 800px;
+    margin: 0;
+    padding: 20px;
+}
+
+.rscContainer.cs {
+    background-color: var(--light-gray);
+}
+
+.rscContainer.pd {
+    background-color: var(--light-blue);
+}
+
+.rscContainer.ref {
+    background-color: var(--light-gray);
+}
+
+.rscContainer.yt {
+    background-color: var(--light-blue);
+}
+
+.rscContainer h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+    color: var(--light-gray);
+}
+
+.rscContainer.cs h3 {
+    color: var(--light-blue);
+}
+
+.rscContainer.ref h3 {
+    color: var(--light-blue);
+}
+
+.resourcesArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    width: 100%;
+}
+
+.resource {
+    width: 200px;
+    margin: 0 20px 50px 20px;
 }
