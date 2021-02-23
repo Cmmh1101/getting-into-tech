@@ -408,7 +408,7 @@ button .fas.fa-folder-plus {
 .formContainer {
     background-color: rgba(243, 244, 245, 0.767);
     width: 95%;
-    height: 90%;
+    height: auto;
     margin: 0 auto;
     border-radius: 10px;
 }
