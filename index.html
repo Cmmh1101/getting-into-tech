@@ -92,7 +92,7 @@
                 <p>Click the button below to see the road map to be a web developer </p>
                 <div class="buttonArea">
                     <button class="btn"> <a class="btnOne" href="#"><i class="fas fa-search-location"></i>road map</a> </button>
-                    <button class="btn"> <a class="btnTwo" href="#">resources<i class="fas fa-folder-plus"></i></a> </button>
+                    <button class="btn"> <a class="btnTwo" href="#resources">resources<i class="fas fa-folder-plus"></i></a> </button>
                 </div>
             </div>
         </div>
@@ -125,6 +125,21 @@
                     </div>
                     <div class="resource item3">
                         <a href="https://codingphase.com">Codingphase (affordable course)</a>
+                    </div>
+                    <div class="resource item3">
+                        <a href="https://scrimba.com">Scrimba (free and affordable course)</a>
+                    </div>
+                    <div class="resource item3">
+                        <a href="https://www.codecademy.com">Codecademy (free and affordable course)</a>
+                    </div>
+                    <div class="resource item3">
+                        <a href="https://scrimba.com">Scrimba (free and affordable course)</a>
+                    </div>
+                    <div class="resource item3">
+                        <a href="https://www.udacity.com">Udacity (free and affordable course)</a>
+                    </div>
+                    <div class="resource item3">
+                        <a href="https://www.theodinproject.com">The Odein Project (free course)</a>
                     </div>
                 </div>
             </div>
@@ -197,29 +212,100 @@
             <div class="formContainer">
                 <h4>Let's collaborate. share your favorite tools here!</h4>
                 <div class="layer"></div>
-                <form class="toolsForm" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+                <form class="toolsForm" name="share" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                     <div class="hidden">
                         <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
                     </div>
                     <div class="form nameForm">
-                        <label>What's your name? <input type="text" name="name" placeholder="Firs Name, Last Name"/></label>
+                        <label>What's your name? <input type="text" name="name" placeholder="Firs Name, Last Name" required/></label>
                     </div>
                     <div class="form emailForm">
-                        <label>Your Email: <input type="email" name="email" placeholder="email@example.com" /></label>
+                        <label>Your Email: <input type="email" name="email" placeholder="email@example.com" required /></label>
                     </div>
                     <div class="form rscForm">
-                        <label>Share your resources: <textarea name="message" placeholder="websites, podcasts, blogs"></textarea></label>
+                        <label>Share your resources: <textarea name="message" placeholder="websites, podcasts, blogs" required></textarea></label>
                     </div>
                     <!-- <div class="captcha" data-netlify-recaptcha="true"></div> -->
                     <div class="form button">
                         <button class="btn submitTools" type="submit"> <a class="btnAlone" href="#"><i class="fas fa-paper-plane"></i>Send</a> </button>
                     </div>
                 </form>
-
             </div>
-
         </div>
     </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contactContainer">
+            <div class="socialArea">
+                <div class="contactBtn" id="socialBtn">
+                    <div class="social button">
+                        <h3>Join Us</h3>
+                        <a class="btnAlone" href="#"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+                <div class="contactBtn" id="contactBtn">
+                    <div class="social contactButton">
+                        <h3>contact us</h3>
+                        <i class="fas fa-mail-bulk"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <div class="contactMeContainer">
+                <h4>Say hello and ask questions, we are here to help each other!</h4>
+                <form class="contactMeForm" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+                    <div class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </div>
+                    <div class="contact nameForm">
+                        <label>Hey, I'm Carla. What's your name? <input type="text" name="name" placeholder="Firs Name, Last Name" required/></label>
+                    </div>
+                    <div class="contact emailForm">
+                        <label>Your Email: <input type="email" name="email" placeholder="email@example.com" required /></label>
+                    </div>
+                    <div class="contact msgForm">
+                        <label>Say hello and ask questions, we are here to help each other!<textarea name="message" placeholder="websites, podcasts, blogs" required></textarea></label>
+                    </div>
+                    <!-- <div class="captcha" data-netlify-recaptcha="true"></div> -->
+                    <div class="form button">
+                        <button class="btn submitTools" type="submit"> <a class="btnAlone" href="#"><i class="fas fa-paper-plane"></i>Send</a> </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="subscribe">
+            <div class="form button">
+                <h4>Subscribe to receive, tips, challenges, and news from the community</h4>
+                <form class="subscribeForm" name="subscribe" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+                    <div class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                    </div>
+                    <div class="subsForm nameForm">
+                        <label>What's your name? <input type="text" name="name" placeholder="Firs Name, Last Name" required/></label>
+                    </div>
+                    <div class="subsForm emailForm">
+                        <label>Your Email: <input type="email" name="email" placeholder="email@example.com" required /></label>
+                    </div>
+                     <div class="captcha" data-netlify-recaptcha="true"></div> 
+                    <div class="subsForm button">
+                        <button class="btn submitTools" type="submit"> <a class="btnAlone" href="#"><i class="fas fa-paper-plane"></i>Send</a> </button>
+                    </div>
+                </form>
+            </div>
+        </div> -->
+    </section>
+
+    <footer>
+        <div class="footerLogo">
+            <a href="#hero" id="name">GiT</a>
+        </div>
+        <div class="footerStamp">
+            © 2021 | Powered by Carla Montano
+        </div>
+
+    </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
 

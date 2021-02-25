@@ -23,11 +23,26 @@ window.addEventListener('scroll', function() {
 
 // end of skewed hero triangles ===================
 
+// togle contact form =============================
+
+var contactBtn = document.getElementsByClassName('contactButton')
+
+var contactForm = document.getElementsByClassName('contactForm')
+
+var clickedBtn = function() {
+    contactForm[0].classList.toggle('active')
+}
+
+contactBtn[0].addEventListener('click', clickedBtn)
+
+console.log(contactBtn[0])
+
 // ============== SCROLL REVEAL ===================
 
 ScrollReveal().reveal('#hero');
 ScrollReveal().reveal('#intro', { delay: 500 });
 ScrollReveal().reveal('#path', { delay: 500 });
 ScrollReveal().reveal('#resources', { delay: 500 });
+ScrollReveal().reveal('#contact', { delay: 500 });
 
 // ============== END OF SCROLL REVEAL ===================
