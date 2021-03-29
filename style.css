@@ -103,6 +103,13 @@ ul.nav-menu li a:hover {
     text-transform: capitalize;
 }
 
+#hero p {
+    color: var(--dark-grey);
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
 #hero .triangleOne {
     position: absolute;
     bottom: -100%;
@@ -711,7 +718,13 @@ footer {
 
 @media only screen and (max-width: 700px) {
     #hero h2 {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+    #hero p {
+        color: var(--dark-grey);
+        font-size: 1.3rem;
+        text-align: center;
+        text-transform: capitalize;
     }
     #intro {
         padding: 10px;
